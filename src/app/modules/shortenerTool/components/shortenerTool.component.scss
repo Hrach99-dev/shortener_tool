@@ -1,0 +1,42 @@
+.shortener-tool {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 20px;
+  &__input {
+    width: 200px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: transparent;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #000000;
+  }
+  &__button {
+    margin-left: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #000000;
+  }
+
+  &__urls {
+    margin-top: 20px;
+    &-url {
+      list-style-type: none;
+      font-size: 16px;
+      color: #000000;
+      margin-top: 10px;
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

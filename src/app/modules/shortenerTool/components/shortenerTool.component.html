@@ -1,0 +1,10 @@
+<div class="shortener-tool">
+  <input class="shortener-tool__input" type="text" placeholder="Import The Url" [(ngModel)]="url">
+  <button (click)="getShortenerUrlsByUrl()" class="shortener-tool__button">Shorten</button>
+
+  <ul class="shortener-tool__urls">
+    <li *ngFor="let link of links; let i = index" class="shortener-tool__urls-url">
+      Short url {{i + 1}}: <a href="{{link.value}}">{{link.key}}</a>
+    </li>
+  </ul>
+</div>
